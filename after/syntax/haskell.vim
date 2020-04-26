@@ -56,5 +56,8 @@ syntax match hsNiceOperator /\s\.\s/ms=s+1,me=e-1 conceal cchar=∘
 syntax match hsNiceOperator "\.\." conceal cchar=‥
 syntax match hsNiceOperator "!!" conceal cchar=‼
 
+" Diamond
+syntax match hsNiceOperator "<>" conceal cchar=♦
+
 hi link hsNiceOperator Operator
 hi! link Conceal Operator
