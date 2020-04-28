@@ -46,10 +46,6 @@ syntax match hsNiceOperator "<<" conceal cchar=«
 syntax match hsNiceOperator "<=\ze[^<]" conceal cchar=≤
 syntax match hsNiceOperator ">=\ze[^>]" conceal cchar=≥
 
-" Redfining to get proper '::' concealing
-syntax match hs_DeclareFunction /^[a-z_(]\S*\(\s\|\n\)*::/me=e-2 nextgroup=hsNiceOperator contains=hs_FunctionName,hs_OpFunctionName
-syntax match hsNiceOperator "\:\:" conceal cchar=∷
-
 " Only replace the dot, avoid taking spaces around.
 syntax match hsNiceOperator /\s\.\s/ms=s+1,me=e-1 conceal cchar=∘
 
